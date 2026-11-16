@@ -6907,3 +6907,26 @@ p.contact-form-note {
     margin: 0;
   }
 }
+
+/* MOBILE HERO — COMPACT SOCIAL ICONS */
+@media (max-width: 768px) {
+  .hero-socials {
+    gap: 12px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .hero-socials .social-icon {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 10px;
+  }
+
+  .hero-socials .social-icon svg,
+  .hero-socials .social-icon i {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+  }
+}
