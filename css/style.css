@@ -1755,7 +1755,7 @@ color: #ffffff;
     }
 
     .service-card h3 {
-        font-size: 19px;
+        font-size: 18px;
         line-height: 1.25;
     }
 
@@ -6928,5 +6928,32 @@ p.contact-form-note {
     width: 20px;
     height: 20px;
     font-size: 20px;
+  }
+}
+
+/* HOME SERVICES — MOBILE HEIGHT REFINEMENT */
+@media (max-width: 768px) {
+  .home-services .service-card {
+    height: 280px;
+  }
+}
+/* HOME HERO — MOBILE TEXT READABILITY */
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(4, 24, 61, 0.97) 0%,
+      rgba(5, 29, 69, 0.94) 37%,
+      rgba(5, 30, 70, 0.54) 66%,
+      rgba(5, 30, 70, 0.20) 100%
+    );
+  }
+}
+/* MOBILE HERO — DESCRIPTION CLARITY */
+@media (max-width: 768px) {
+  .hero-description {
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.8),
+      0 2px 8px rgba(0, 0, 0, 0.45);
   }
 }
