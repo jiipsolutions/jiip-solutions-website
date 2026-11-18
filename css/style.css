@@ -5918,8 +5918,8 @@ overflow: hidden;
 @media (max-width: 768px) {
 
   .hero-image .hero-slide:nth-child(1) {
-    object-position: 70% center;
-  }
+    object-position: 90% center;
+}
 
   .hero-image .hero-slide:nth-child(2) {
     object-position: 75% center;
