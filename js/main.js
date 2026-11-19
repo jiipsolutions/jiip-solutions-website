@@ -132,7 +132,7 @@ async function loadSharedFooter() {
   if (!footerContainer) return;
 
   try {
-    const response = await fetch("footer.html");
+   const response = await fetch("/footer.html");
 
     if (!response.ok) {
       throw new Error("Footer could not be loaded");
@@ -159,7 +159,7 @@ async function loadSharedHeader() {
     if (!headerContainer) return;
 
     try {
-        const response = await fetch("header.html");
+        const response = await fetch("/header.html");
 
         if (!response.ok) {
             throw new Error("Header could not be loaded");
@@ -168,18 +168,30 @@ async function loadSharedHeader() {
         headerContainer.innerHTML = await response.text();
 
         // Highlight the current page in navigation
-        const currentPage =
-            window.location.pathname.split("/").pop() || "index.html";
+const normalizePath = (path) => {
+    return path
+        .replace(/\/index\.html$/, "/")
+        .replace(/\.html$/, "")
+        .replace(/\/+$/, "") || "/";
+};
 
-        headerContainer.querySelectorAll(".desktop-nav a").forEach((link) => {
-            const linkPage = link.getAttribute("href");
+const currentPage = normalizePath(window.location.pathname);
 
-            link.classList.toggle("active", linkPage === currentPage);
+headerContainer.querySelectorAll(".desktop-nav a").forEach((link) => {
+    const linkPage = normalizePath(
+        new URL(link.href).pathname
+    );
 
-            if (linkPage === currentPage) {
-                link.setAttribute("aria-current", "page");
-            }
-        });
+    const isActive = linkPage === currentPage;
+
+    link.classList.toggle("active", isActive);
+
+    if (isActive) {
+        link.setAttribute("aria-current", "page");
+    } else {
+        link.removeAttribute("aria-current");
+    }
+});
 
     } catch (error) {
         console.error("Shared header error:", error);
