@@ -714,256 +714,8 @@ z-index: 1000;
     }
 }
 
-/* ========================================
-   HOME - STRATEGY SECTION
-======================================== */
-
-.home-strategy {
-    padding: 80px 0;
-    background: #ffffff;
-}
-
-.strategy-container {
-    width: min(92%, 1780px);
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    align-items: center;
-    gap: 90px;
-}
-
-/* IMAGE */
-
-.strategy-visual {
-    position: relative;
-    height: 520px;
-    border-radius: 18px;
-    overflow: hidden;
-}
-
-.strategy-visual img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* CONTENT */
-
-.strategy-content {
-    max-width: 650px;
-}
-
-.strategy-content .section-eyebrow {
-    display: block;
-    margin-bottom: 22px;
-
-    color: #1677ff;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 4px;
-}
-
-.strategy-content h2 {
-    margin: 0 0 26px;
-
-    color: #071b42;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 3.6vw, 62px);
-    line-height: 1.05;
-    letter-spacing: -1.5px;
-}
-
-.strategy-intro {
-    max-width: 600px;
-    margin: 0;
-
-    color: #596579;
-    font-size: 17px;
-    line-height: 1.75;
-}
-
-/* STRATEGY FLOW */
-
-.strategy-flow {
-    margin-top: 42px;
-    padding-top: 26px;
-    border-top: 1px solid #dce5f0;
-
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.strategy-flow span {
-    display: inline-flex;
-    align-items: center;
-
-    color: #071b42;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.strategy-flow span:not(:last-child)::after {
-    content: "→";
-    margin-left: 12px;
-    color: #1677ff;
-}
-
-/* ========================================
-   HOME STRATEGY - FINAL LAYOUT OVERRIDE
-======================================== */
-
-.home-strategy {
-    padding: 110px 0;
-    background: #ffffff;
-}
-
-.strategy-container {
-    width: min(92%, 1780px);
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 0.78fr 1.22fr;
-    align-items: center;
-    gap: 70px;
-}
-
-/* LEFT CONTENT */
-
-.strategy-content {
-    max-width: 620px;
-}
-
-.strategy-content .section-eyebrow {
-    display: block;
-    margin-bottom: 18px;
-
-   color: #0056CC;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 3px;
-}
-
-.strategy-content h2 {
-    margin: 0 0 24px;
-
-    color: #071b42;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 3.5vw, 60px);
-    line-height: 1.05;
-    letter-spacing: -1.5px;
-}
-
-.strategy-intro {
-    max-width: 560px;
-    margin: 0 0 30px;
-
-    color: #596579;
-    font-size: 16px;
-    line-height: 1.75;
-}
-
-.strategy-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-
-    padding: 14px 22px;
-
-    background: #1677ff;
-    color: #ffffff;
-    border-radius: 6px;
-
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
-}
-
-.strategy-button:hover {
-    background: #0d67e8;
-    transform: translateY(-2px);
-}
 
 
-/* RIGHT VISUAL */
-
-.strategy-visual {
-    position: relative;
-    height: 480px;
-    border-radius: 14px;
-    overflow: hidden;
-    background: #071b42;
-}
-
-.strategy-visual > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-
-/* DARK BENEFIT PANEL */
-
-.strategy-benefits {
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    bottom: 22px;
-
-    width: 255px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-}
-
-.strategy-benefit {
-    min-height: 82px;
-    padding: 14px 16px;
-
-    display: flex;
-    align-items: center;
-    gap: 14px;
-
-    background: rgba(5, 25, 58, 0.92);
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    border-radius: 8px;
-
-    color: #ffffff;
-
-    backdrop-filter: blur(8px);
-}
-
-.benefit-icon {
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #1682ff;
-    border: 1px solid rgba(22, 130, 255, 0.35);
-    border-radius: 50%;
-
-    font-size: 22px;
-}
-
-.strategy-benefit > span:last-child {
-    font-size: 13px;
-    line-height: 1.4;
-    font-weight: 600;
-}
 /* ========================================
    HOME - HOW WE WORK
 ======================================== */
@@ -1860,100 +1612,7 @@ color: #ffffff;
     }
 }
 }
-/* ========================================
-   HOME STRATEGY - MOBILE
-======================================== */
 
-@media (max-width: 768px) {
-
-    .home-strategy {
-        padding: 55px 0;
-    }
-
-    .strategy-container {
-        width: calc(100% - 36px);
-        display: block;
-        margin: 0 auto;
-    }
-
-    .strategy-content {
-        max-width: none;
-        margin-bottom: 42px;
-    }
-
-    .strategy-content .section-eyebrow {
-        margin-bottom: 16px;
-        font-size: 11px;
-        letter-spacing: 2.5px;
-    }
-
-    .strategy-content h2 {
-        font-size: 40px;
-        line-height: 1.06;
-        letter-spacing: -1px;
-        margin-bottom: 22px;
-    }
-
-    .strategy-intro {
-        max-width: none;
-        font-size: 15px;
-        line-height: 1.7;
-        margin-bottom: 28px;
-    }
-
-    .strategy-button {
-        padding: 14px 19px;
-        font-size: 13px;
-    }
-
-    .strategy-visual {
-        width: 100%;
-        height: auto;
-        min-height: 620px;
-        border-radius: 14px;
-        overflow: hidden;
-    }
-
-    .strategy-visual > img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .strategy-benefits {
-        position: absolute;
-        left: 18px;
-        right: 18px;
-        top: auto;
-        bottom: 18px;
-
-        width: auto;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 9px;
-    }
-
-    .strategy-benefit {
-        min-height: 68px;
-        padding: 11px 14px;
-    }
-
-    .benefit-icon {
-        flex: 0 0 38px;
-        width: 38px;
-        height: 38px;
-        font-size: 18px;
-    }
-
-    .strategy-benefit > span:last-child {
-        font-size: 12px;
-        line-height: 1.35;
-    }
-}
 /* ========================================
    HOME HOW WE WORK - MOBILE
 ======================================== */
@@ -2489,10 +2148,7 @@ background: linear-gradient(
 
 @media (max-width: 768px) {
 
-    /* Strategy section */
-    .home-strategy {
-        padding: 65px 0 55px;
-    }
+    
 
     /* How We Work */
     .home-process {
@@ -5602,7 +5258,6 @@ overflow: hidden;
 
 /* Main section headings across all pages */
 .services-heading h2,
-.strategy-content h2,
 .process-heading h2,
 .packages-heading h2,
 .service-row h2,
@@ -5645,7 +5300,6 @@ overflow: hidden;
   }
 
   .services-heading h2,
-  .strategy-content h2,
   .process-heading h2,
   .packages-heading h2,
   .service-row h2,
@@ -6008,13 +5662,7 @@ overflow: hidden;
     padding-top: 35px !important;
   }
 }
-/* HOME STRATEGY — MOBILE IMAGE ADJUSTMENT */
-@media (max-width: 768px) {
-  .strategy-visual > img {
-   transform: translate(10px, -85px) scale(1.06);
-    transform-origin: center;
-  }
-}
+
 
 /* =========================================
    HOME PACKAGE CARDS — FINAL COMPACT LAYOUT
@@ -6956,4 +6604,287 @@ p.contact-form-note {
       0 1px 3px rgba(0, 0, 0, 0.8),
       0 2px 8px rgba(0, 0, 0, 0.45);
   }
+}
+/* ================================
+   HOME — THE JIIP DIFFERENCE
+================================ */
+
+.home-difference {
+    padding: 65px 0 100px;
+    background: #ffffff;
+}
+
+.home-difference .difference-container {
+    width: min(92%, 1780px);
+    margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.home-difference .difference-heading {
+    max-width: 850px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.home-difference .difference-heading .section-eyebrow {
+    display: block;
+    margin-bottom: 16px;
+    color: #0056CC;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.home-difference .difference-heading h2 {
+    margin: 0 0 22px;
+    color: #071b42;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 3vw, 54px);
+    line-height: 1.08;
+    letter-spacing: -1.2px;
+}
+
+.home-difference .difference-intro {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #596579;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+/* DIFFERENCE GRID */
+
+.home-difference .difference-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 24px;
+}
+
+/* INDIVIDUAL CARDS */
+
+.home-difference .difference-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e0e8f2;
+    border-radius: 14px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* CARD ICONS */
+
+.home-difference .difference-icon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf4ff;
+    color: #1677ff;
+    border-radius: 12px;
+}
+
+.home-difference .difference-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 1.8;
+}
+
+/* CARD CONTENT */
+
+.home-difference .difference-card h3 {
+    margin: 0 0 12px;
+    color: #071b42;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+}
+
+.home-difference .difference-card p {
+    margin: 0;
+    color: #596579;
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+/* DESKTOP HOVER */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .home-difference .difference-card:hover {
+        transform: translateY(-5px);
+        border-color: #b9d6ff;
+        box-shadow: 0 12px 30px rgba(7, 27, 66, 0.08);
+    }
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+    .home-difference {
+        padding: 80px 0;
+    }
+
+    .home-difference .difference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .home-difference .difference-card {
+        padding: 26px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .home-difference {
+        padding: 65px 0;
+    }
+
+    .home-difference .difference-container {
+        width: calc(100% - 36px);
+    }
+
+    .home-difference .difference-heading {
+        margin-bottom: 32px;
+    }
+
+    .home-difference .difference-heading .section-eyebrow {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+        margin-bottom: 14px;
+    }
+
+    .home-difference .difference-heading h2 {
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 1.1;
+        letter-spacing: -1px;
+        margin-bottom: 18px;
+    }
+
+    .home-difference .difference-intro {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .home-difference .difference-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .home-difference .difference-card {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .home-difference .difference-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 14px;
+        border-radius: 10px;
+    }
+
+    .home-difference .difference-icon svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .home-difference .difference-card h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .home-difference .difference-card p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+/* ACCESSIBILITY — REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-difference .difference-card {
+        transition: none;
+    }
+
+    .home-difference .difference-card:hover {
+        transform: none;
+    }
+}
+/* ================================
+   JIIP DIFFERENCE — MOBILE REFINEMENT
+================================ */
+
+@media (max-width: 768px) {
+
+   .home-difference {
+    padding: 38px 0 40px;
+}
+
+    .home-difference .difference-heading {
+        margin-bottom: 28px;
+    }
+
+    .home-difference .difference-grid {
+        gap: 12px;
+    }
+
+    .home-difference .difference-card {
+        display: grid;
+        grid-template-columns: 40px minmax(0, 1fr);
+        column-gap: 12px;
+        row-gap: 12px;
+        align-items: center;
+        padding: 18px;
+    }
+
+    .home-difference .difference-icon {
+        grid-column: 1;
+        grid-row: 1;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .home-difference .difference-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .home-difference .difference-card h3 {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    .home-difference .difference-card p {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.65;
+    }
 }
